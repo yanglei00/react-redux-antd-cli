@@ -1,0 +1,23 @@
+{
+  "name": "react-redux-antd",
+  "version": "1.0.0",
+  "description": "react redux antd-mobile webpack 脚手架工具",
+  "bin": {
+    "ry": "index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rayyang00",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.16.0",
+    "download-git-repo": "^1.0.2",
+    "handlebars": "^4.0.11",
+    "inquirer": "^6.0.0",
+    "log-symbols": "^2.2.0",
+    "ora": "^3.0.0"
+  }
+}
