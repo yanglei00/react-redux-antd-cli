@@ -1,9 +1,9 @@
 {
-  "name": "react-redux-antd",
-  "version": "1.0.0",
+  "name": "react-redux-antd-cli",
+  "version": "1.0.9",
   "description": "react redux antd-mobile webpack 脚手架工具",
   "bin": {
-    "ry": "index.js"
+    "ray": "index.js"
   },
   "main": "index.js",
   "scripts": {

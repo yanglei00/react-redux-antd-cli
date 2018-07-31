@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+// 会去环境设置寻找node目录 重要
+
 const fs = require('fs');
 const program = require('commander');
 const download = require('download-git-repo');
@@ -6,7 +9,7 @@ const inquirer = require('inquirer');
 const ora = require('ora');
 const chalk = require('chalk');
 const symbols = require('log-symbols');
-program.version('1.0.0', '-v, --version')
+program.version('1.0.9', '-v, --version')
     .command('init <name>')
     .action((name) => {
         if(!fs.existsSync(name)){
@@ -22,7 +25,7 @@ program.version('1.0.0', '-v, --version')
             ]).then((answers) => {
                 const spinner = ora('正在下载模板...');
                 spinner.start();
-                download('https://github.com:yanglei00/react-redux-antd-cli#master', name, {clone: true}, (err) => {
+                download('https://github.com:yanglei00/react-redux-antd#master', name, {clone: true}, (err) => {
                     if(err){
                         spinner.fail();
                         console.log(symbols.error, chalk.red(err));
